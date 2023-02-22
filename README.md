@@ -20,5 +20,8 @@ Expected output:
         "MILLER COORS": 5300
     }
 
+## Program Overview
+![overview](/figures/overview.JPG)
+
 ## Note
 You don't have to locally possess the CSV file in this directory, this program can fetch it from a AWS S3
