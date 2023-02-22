@@ -1,0 +1,26 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+
+I use Python as the programming language because its high-level and clean syntax makes it easy to deploy for a small project. Besides, there are lots of libraries that can be used in a Python project. In this one, I utilized Pandas, Requests, and three Python standard libraries: os.path, json, sys. 
+- Pandas is good for dealing with CSV table. 
+- Requests can help this program fetch the CSV file from a remote storage, which separates the code and data file, to keep the code repository simple and light-weight. 
+- os.path checks if the CSV file exists before fetching it. 
+- sys library help this program take the args from command-line terminal.
+- json wraps up the payer data structure into a json object, facilitating the potential data transmission in the future.
+
+2. What are the advantages and disadvantages of your solution?
+
+My solution follows the principles of functional programming paradigm. Every function corresponds to a task that has a meaning in the real world. The output of each function is solely based on its input, which makes the code more readable, easy to reuse and eliminates most side effects.
+
+What's more, I practiced the "separation of concerns" principle by using Requests library to fetch CSV file from a remote source instead of a local directory. It can not only improve the maintainability as what I've discussed in question one, but also ensure the security. Transaction file often contains sensitive information. In a real-world setting, we can easily change the url to an environment variable, or use other encryption means to protect it.
+
+One problem of this solution is it doesn't have a tracker to record the current transaction in the spending process. As a result, if the amount to spend runs out, we don't know which transaction the program stops at. It won't cause any problem in the given task. While it would become a problem if there is a following amount of points to spend. In the bigger picture, it should take "transaction integrity" into account. Another possible disadvantage is its efficiency when the program scales, due to the nature of Python.  
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+
+My favorite school project is a Java Spring Boot project called Flight Finder. In this project, I was responsible for developing the backend and implementing the algorithms that would optimize flight searches for users.
+
+One of the key challenges in this project was implementing Dijkstra's algorithm to find the optimal flights based on user filters. This required me to adapt graph theory to flight searches by customizing hash table, edge and vertex. I also learned how to integrate with a MySQL database to store and retrieve the graph structure. 
+
+Working with my teammate to develop RESTful APIs using Spring Boot MVC was another challenge. We had biweekly meetings to align frontend and backend development, including the format of requests, responses, URL, etc.
+
+Despite the challenges, I found this project to be incredibly rewarding. It allowed me to apply my knowledge of algorithms and data structures in a holistic application. It helped me get familiar with the Spring Boot framework, which paved the way for my subsequent projects and work.
