@@ -21,6 +21,7 @@ Expected output:
     }
 
 ## Program Overview
+[Video Walkthrough on YouTube (an unlisted video)](https://youtu.be/Y9zepYxCIGE)
 ![overview](/figures/overview.JPG)
 
 ## Note
