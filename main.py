@@ -56,6 +56,14 @@ def spend(amount: int, df):
 
     Return the transaction dataframe when running out of points
     """
+    # Avoid negative spend
+    if amount < 0:
+        raise Exception("The amount of points to spend cannot be negative")
+
+    # Avoid overdraft
+    if amount > sum(payer.values()):
+        raise Exception("User's balance is less than the amount of points to spend")
+        
     # Iterate rows to adjust each payer's balance
     for idx, row in df.iterrows():
         current_payer = row["payer"]

@@ -7,6 +7,12 @@ External libraries: Pandas, Requests
 
 
 ## Guide
+Download Python 3 on your Windows/MacOS/Linux device
+
+Install external libraries
+
+    pip install pandas requests
+
 Sample code to run this program on system command-line:
 
     python3 main.py 5000 transactions.csv
